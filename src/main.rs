@@ -1,6 +1,7 @@
 use log::info;
 
-fn main() {
+#[tokio::main]
+async fn main() {
     kioto::init();
 
     info!("Hello, world!");

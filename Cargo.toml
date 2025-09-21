@@ -29,4 +29,21 @@ tracing-subscriber = { version = "0.3.19", features=["env-filter"] }
 tracing-appender = "0.2.3"
 uuid = { version = "1.18.1", features = ["v4"] }
 lazy_static = "1.5.0"
+tonic = "0.14.2"
+prost = "0.14.1"
+tokio-stream = "0.1.17"
+tonic-prost = "0.14.2"
+
+[build-dependencies]
+tonic-build = "0.14.2"
+tonic-prost-build ="0.14.2"
+prost-build = "0.14.1"
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
 
